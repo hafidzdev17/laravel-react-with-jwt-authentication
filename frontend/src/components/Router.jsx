@@ -1,17 +1,21 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Gallery from "../pages/Gallery";
-import Test from "../pages/Test";
+
+//import component Register
+import Register from "../pages/Register";
+
+//import component Login
+import Login from "../pages/Login";
+
+//import component Register
+import Dashboard from "../pages/Dashboard";
 
 export default function Router() {
     return (
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="gallery" element={<Gallery />} />
-            <Route path="test" element={<Test />} />
+            <Route path="/" element={<Login />} />
+            <Route path="register" element={<Register />} />
+            <Route path="dashboard" element={<Dashboard />} />
         </Routes>
     );
 }
